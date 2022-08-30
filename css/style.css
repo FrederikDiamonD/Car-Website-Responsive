@@ -104,6 +104,22 @@ img {
     overflow: hidden;
 }
 
+.shape {
+    background-color: hsl(219, 33%, 32%, .5);
+    filter: blur(112px);
+    border-radius: 50%;
+}
+
+.shape__big {
+    width: 400px;
+    height: 400px;
+}
+
+.shape__small {
+    width: 300px;
+    height: 300px;
+}
+
 /* Header START */
 .header {
     position: fixed;
@@ -192,3 +208,135 @@ img {
     right: 0;
 }
 /* Header END */
+
+/* Home Section START */
+.home {
+    position: relative;
+    overflow: hidden;
+}
+
+.home__container {
+    position: relative;
+    padding-top: 4rem;
+    row-gap: 3rem;
+}
+
+.home__data {
+    text-align: center;
+}
+
+.home__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: 1rem;
+}
+
+.home__subtitle {
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.25rem;
+}
+
+.home__elec {
+    font-size: var(--small-font-size);
+    font-weight: 400;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+}
+
+.home__elec i {
+    color: var(--first-color);
+}
+
+.home__img {
+    width: 280px;
+    justify-self: center;
+}
+
+.home__car {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    margin-bottom: 2rem;
+}
+
+.home__car-name {
+    font-size: 0.625rem;
+    font-weight: 400;
+    color: var(--text-color-light);
+}
+
+.home__car-data {
+    text-align: center;
+}
+
+.home__car-number {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 0.25rem;
+}
+
+.home__car-icon {
+    font-size: 0.875rem;
+    background-color: var(--container-color);
+    border-radius: 50%;
+    padding: 0.367rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.home__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    position: relative;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    color: var(--white-color);
+    width: 70px;
+    height: 70px;
+    border: 2px solid hsl(158, 89%, 30%);
+    border-radius: 50%;
+}
+
+.home__button::before {
+    content: '';
+    position: absolute;
+    border: 2px solid hsl(158, 98%, 43%);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    box-shadow: 0 0 12px hsl(158, 98%, 43%);
+    transition: .3s;
+    animation: button 3s infinite;
+}
+
+.home .shape__big,
+.home .shape__small {
+    position: absolute;
+}
+
+.home .shape__big {
+    left: -9rem;
+    top: -4rem;
+}
+
+.home .shape__small {
+    right: -10rem;
+    bottom: 3rem;
+}
+
+@keyframes button {
+    0% {
+        box-shadow: 0 0 12px hsl(158, 98%, 43%);
+    }
+
+    50% {
+        box-shadow: 0 0 24px hsl(158, 98%, 43%);
+    }
+}
+/* Home Section END */
