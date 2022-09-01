@@ -506,3 +506,72 @@ span.swiper-pagination-bullet-active {
 }
   
 /* Popular Section END */
+
+/* Features Section START */
+.features {
+    position: relative;
+    overflow: hidden;
+}
+
+.features__container {
+    padding-top: 2rem;
+    grid-template-columns: 285px;
+    justify-content: center;
+}
+
+.features__group {
+    display: grid;
+    position: relative;
+    z-index: 10;
+}
+
+.features__img {
+    width: 150px;
+    justify-self: center;
+}
+
+.features__card {
+    position: absolute;
+    color: var(--title-color);
+    background-color: hsla(0, 0%, 100%, .1);
+    width: 112px;
+    backdrop-filter: blur(16px);
+    border-radius: 1.25rem;
+    padding: 0.75rem 2rem;
+    text-align: center;
+}
+
+.features__card-1 {
+    top: 4rem;
+    left: 1.5rem;
+}
+
+.features__card-2 {
+    top: 8rem;
+    right: 1rem;
+}
+
+.features__card-3 {
+    left: 1.5rem;
+    bottom: 2rem;
+}
+
+.features__card-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 0.25rem;
+}
+
+.features__description {
+    font-size: var(--smaller-font-size);
+}
+
+.features__map {
+    position: absolute;
+    max-width: initial;
+    width: 450px;
+    top: 8rem;
+    left: -3rem;
+    margin: auto;
+    transform: rotate(-22deg);
+}
+/* Features Section END */
